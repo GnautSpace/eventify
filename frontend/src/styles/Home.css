@@ -1,0 +1,68 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.home-content {
+    max-width: 600px;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.explore-btn {
+    background: #f4a261;
+    color: white;
+}
+.create-btn {
+    background: #e63946;
+    color: white;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
